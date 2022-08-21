@@ -1,0 +1,23 @@
+{
+    "sketch": "jtag2updi.ino",
+    "configuration": "cpu=atmega328",
+    "board": "arduino:avr:nano",
+    "output": "build",
+    "port": "COM3",
+    "includePath": [
+        "C:\\Compiler\\Arduino\\tools\\**",
+        "C:\\Compiler\\Arduino\\hardware\\arduino\\avr\\**",
+        "C:/Compiler/Arduino/ardware/tools/avr/avr/include",
+        "C:/Compiler/Arduino/hardware/arduino/avr/variants/mega"
+    ],
+    "buildPreferences": [
+        [
+            "build.extra_flags",
+            "-DMY_DEFINE=666 -DANOTHER_DEFINE=3.14 -Wall"
+        ],
+        [
+            "compiler.cpp.extra_flags",
+            "-DYET_ANOTER=\"hello\""
+        ]
+    ]
+}
